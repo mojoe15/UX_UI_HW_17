@@ -103,3 +103,28 @@ nav ul li a:hover {
   font-size: 2rem;
   color: rgb(95, 97, 90);
 }
+
+.main {
+  margin-top: 17vh;
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer ul {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+
+footer ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px 40px 20px;
+}
