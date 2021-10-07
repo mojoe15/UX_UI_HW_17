@@ -113,18 +113,20 @@ footer {
   position: fixed;
   bottom: 0;
   left: 0;
-  display: flex;
+  display: block;
   justify-content: center;
-}
-
-footer ul {
-  display: flex;
-  width: 100vw;
-  justify-content: center;
+  border-bottom: 100px darksalmon;
 }
 
 footer ul li {
   display: inline-block;
   list-style: none;
   margin: 10px 20px 40px 20px;
+}
+
+footer p {
+  text-align: center;
+  padding: 45px;
+  background-color: darksalmon;
+  color: whitesmoke;
 }
