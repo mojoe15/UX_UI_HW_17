@@ -76,21 +76,50 @@ nav ul li a:hover {
   right: 90px;
 }
 
+/* mobile first design */
 .images img {
-  height: fit-content 20%;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  transition: bottom 1s, left 1s;
+  display: none;
 }
 
-.images:hover .blob {
-  bottom: 40px;
+/* media query */
+@media screen and (min-width: 768px) {
+  .images img {
+    display: block;
+    position: absolute;
+    bottom: 300px;
+    left: 200px;
+  }
+
+  .images .blob {
+    display: none;
+  }
+
+  .morgan {
+    left: 400px;
+  }
 }
 
-.images:hover .morgan {
-  left: 45%;
+/* media query */
+@media screen and (min-width: 1200px) {
+  .images img {
+    height: fit-content 20%;
+    position: absolute;
+    left: 50%;
+    bottom: 150px;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+  }
+
+  .images .blob {
+    display: block;
+  }
+  .images:hover .blob {
+    bottom: 40px;
+  }
+
+  .images:hover .morgan {
+    left: 45%;
+  }
 }
 
 .logo-header {
@@ -111,22 +140,29 @@ nav ul li a:hover {
 
 footer {
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   bottom: 0;
   left: 0;
-  display: block;
+  background-color: darksalmon;
+  border-top: 2px solid black;
+  width: 100%;
+}
+
+footer ul {
+  display: flex;
   justify-content: center;
-  border-bottom: 100px darksalmon;
 }
 
 footer ul li {
   display: inline-block;
   list-style: none;
-  margin: 10px 20px 40px 20px;
+  margin: 20px 20px 20px 20px;
 }
 
 footer p {
   text-align: center;
-  padding: 45px;
-  background-color: darksalmon;
+  padding: 20px;
   color: whitesmoke;
 }
