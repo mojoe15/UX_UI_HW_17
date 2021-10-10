@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     font-family: serif;
+    --tw-text-opacity: 1;
+    color: rgba(17, 24, 39, var(--tw-text-opacity));
 }
 
 html {
@@ -162,7 +164,7 @@ nav ul li a:hover {
 }
 
 .projects {
-    height: 800px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -170,9 +172,9 @@ nav ul li a:hover {
 
 .project-card-image-left {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: solid 1px blue;
+    text-align: left;
+    height: 300px;
+    margin: 100px 0;
 }
 
 .project-card-image-left img {
@@ -180,61 +182,96 @@ nav ul li a:hover {
 }
 
 .project-card-image-left h1 {
+    font-weight: 600;
     margin-bottom: 30px;
 }
 
 .project-card-image-left a {
     margin-top: 20px;
-    border: solid 1px blue;
-}
-
-.project-card-image-left p {
-    width: 70%;
-    border: solid 1px blue;
-    align-self: center;
-}
-
-.project-card-image-left img {
-    height: 200px;
-    width: 200px;
+    text-decoration: underline;
+    font-style: italic;
 }
 
 .project-image-left {
-    padding: 10px;
+    flex: 1;
+}
+
+#travelbugg-mobile {
+    height: 100%;
 }
 
 .project-image {
-    position: absolute;
-    border: solid 1px red;
-}
-
-.project-blob {
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    background-color: cyan;
-    border: solid 1px black;
+    image-rendering: pixelated;
+    margin-left: 10vw;
 }
 
 .project-description {
-    flex: 2;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    border: solid 1px blue;
+    width: 100%;
 }
 
 .project-card-image-right {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: solid 1px red; */
+    text-align: left;
+    height: 300px;
 }
 
 .project-card-image-right img {
-    height: 200px;
-    width: 200px;
+    height: 325px;
+    width: 300px;
+    margin-left: 84px;
+}
+
+.project-image-right {
+    flex: 1;
+    display: flex;
+}
+
+.project-card-image-right h1 {
+    font-weight: 600;
+    padding-left: 100px;
+    margin-bottom: 30px;
+}
+
+.project-card-image-right a {
+    margin-top: 20px;
+    padding-left: 100px;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.project-card-image-right p {
+    padding-left: 100px;
+}
+
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35vw;
+    margin: 0 auto;
+}
+
+.contact-me-fname-email {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.contact-me input {
+    height: 2rem;
+    width: 12rem;
+    padding-left: 8px;
+}
+
+.contact-me textarea {
+    border-radius: 4px;
+    padding-left: 8px;
+    padding-top: 4px;
 }
 
 footer {
